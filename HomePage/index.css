@@ -1,3 +1,13 @@
 body{
     background: -webkit-linear-gradient(left, #4a1753, #220412);
 }
+
+.splide-image{
+    width: 14%;
+    border-radius: 7%;
+    margin: 20px;
+  }
+
+/* .splide_slide{
+
+  } */
