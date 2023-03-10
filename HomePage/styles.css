@@ -1,3 +1,4 @@
+@tailwind base; @tailwind components; @tailwind utilities;
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
   margin: 0;
@@ -10,7 +11,7 @@ html,body{
   height: 100%;
   width: 100%;
   place-items: center;
-  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  background: -webkit-linear-gradient(left, #4a1753, #220412);
 }
 ::selection{
   background: #fa4299;

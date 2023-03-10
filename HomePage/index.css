@@ -1,40 +1,38 @@
-body{
-    background: -webkit-linear-gradient(left, #4a1753, #220412);
+body {
+  background: -webkit-linear-gradient(left, #4a1753, #220412);
 }
-.nav-item:nth-child(2):hover ~ .active{
-    transform: translateX(10rem);
+.nav-item:nth-child(2):hover ~ .active {
+  transform: translateX(10rem);
 }
-.splide-image{
-    width: 14%;
-    border-radius: 7%;
-    margin: 20px;
-    /* display: flex; */
-  }
-
-.splide_slide{
-    position: relative;
-    display: none;
-    float: left;
-    width: 100%;
-    margin-right: -100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transition: transform 0.6s ease-in-out;
+.splide-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 7%;
+  /* margin: 20px; */
+  /* display: flex; */
 }
 
-.carousel-inner{
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+.splide_slide {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  /* margin-right: -100%; */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out;
 }
 
-.splide_slide{
-    display: block;
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  overflow: hidden;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-  position: absolute;
   top: 0;
   bottom: 0;
   z-index: 1;
@@ -52,11 +50,12 @@ body{
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-control-prev,
-.carousel-control-next {
+  .carousel-control-next {
     transition: none;
   }
 }
-.carousel-control-prev:hover, .carousel-control-prev:focus,
+.carousel-control-prev:hover,
+.carousel-control-prev:focus,
 .carousel-control-next:hover,
 .carousel-control-next:focus {
   color: #fff;
